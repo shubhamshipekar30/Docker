@@ -11,4 +11,4 @@ RUN mv neogym-html/*  .
 EXPOSE 80
 CMD httpd -DFOREGROUND
 
-~                   
+                  
