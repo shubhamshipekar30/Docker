@@ -1,4 +1,4 @@
-From ubuntu:22.0.4
+From ubuntu:22.04
 LABEL creator = "Shubham Shipekar"
 RUN yum install httpd -y
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page296/neogym.zip /var/www/html/
