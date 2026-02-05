@@ -1,1 +1,14 @@
+From ubuntu:22.0.4
+LABEL creator = "Shubham Shipekar"
+RUN yum install httpd -y
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page296/neogym.zip /var/www/html/
+RUN rm -rf /var/www/html/index.html
+Run yum install unzip -y
+WORKDIR /var/www/html/
+RUN unzip /var/www/html/neogym.zip
+RUN mv neogym-html/*  .
 
+EXPOSE 80
+CMD httpd -DFOREGROUND
+
+~                   
