@@ -1,6 +1,6 @@
 FROM python:3.10
 
-LABEL devops="Shubham"
+LABEL devops="Varad"
 
 WORKDIR /app
 
